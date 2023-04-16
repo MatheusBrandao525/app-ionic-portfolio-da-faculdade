@@ -16,9 +16,7 @@ export class Tab3Page {
   password!: string;
   login() {
     if (this.username === 'admin' && this.password === 'admin123') {
-      this.navCtrl.navigateForward('../welcome/welcome');
-      console.log(this.username);
-      console.log(this.password);
+      this.navCtrl.navigateForward('tabs/welcome');
     } else {
       this.showAlert('Login ou senha inválidos!');
     }
